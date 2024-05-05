@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+// commit from maor..
 
 
 
@@ -23,8 +23,7 @@ const teacherSchema = new mongoose.Schema({
     }
     ,
     desc:{
-        type:String,
-        require:[true,'must be description']
+        type:String
     }
 
 })

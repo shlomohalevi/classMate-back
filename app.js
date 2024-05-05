@@ -24,7 +24,6 @@ app.use((err, req, res, next) => {
 })
 
 app.all('*', (req, res) => {
-    //change
     res.status(404).json({
         status: 'fail',
         message: 'The requested route is not exist on this server'
@@ -44,7 +43,7 @@ const connectDB = async (url)=>{
     console.log(`Connected to database: ${mongoose.connection.name}`);
 
   }
-  connectDB(process.env.MONGO_ATLAS)
+  connectDB(process.env.MONGO_COMPASS)
 .then(()=>{
 console.log("The data base has been connected");
 })
